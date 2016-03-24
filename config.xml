@@ -1,4 +1,4 @@
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+
 <widget 
 	xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
@@ -8,7 +8,7 @@
     <name>BNC</name>
 
     <description>
-        Bridging & Commercial Mobile App
+        Bridging and Commercial Mobile App
     </description>
 
     <author href="http://www.optimalsolutions.it" email="support@optimalsolutions.it">
