@@ -1,0 +1,39 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar" >
+  <div class="navbar-inner">
+  <div class="left sliding" ><img class="logo" src="img/logo.jpg"></div>
+  <div class="right theme-white searchicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-search" onclick="searchResults();"> <i class="fa fa-search" style="font-size: 19px;"></i></a>
+            </div>
+            <div class="right theme-white navicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size: 19px;"></i></a>
+            </div>
+  </div>
+  </div>
+</div>
+
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="login" class="page page2">
+  <div id="logo" style="background-color:#012852;padding-top:100px;">
+      <div class="content-block-title" style="text-align:center;color:white;font-size: 3em;">Login</div>
+          </div>
+     <div class="Login" style="background-color:#012852;padding-bottom:45px;">
+       <div align="center" style="background-color:#012852;">
+         <input type="text" name="user_email" required value="" id="user_email" placeholder="User email"/><li style="display:none;"><p style=" font-size: 16px;"><span id="email_error"></span></p></li>
+         
+         <input type="password" name="user_password" required value="" id="user_password" placeholder="User password"/><li><p style=" font-size: 16px;"><span id="password_error"></span></p></li>
+      
+         
+         <input type="button" name="submit" onClick="loginsubmit();" value="Login" class="myButton"/>
+        </div>
+     </div>
+     
+     <div class="signup" style="background-color:#012852;">
+        <div align="center"><a href="home.html" >Sign Up</a>
+            
+     </div>
+     </div>
+  </div>
+</div>

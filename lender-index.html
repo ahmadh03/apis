@@ -1,0 +1,135 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left theme-white"><a href="#" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+     <div class="left sliding"><img class="logo" src="img/logo.jpg"></div>
+
+   
+    <div class="right theme-white searchicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-search" onclick="searchResults();"> <i class="fa fa-search" style="font-size: 19px;"></i></a>
+            </div>
+            <div class="right theme-white navicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size: 19px;"></i></a>
+            </div>
+  </div>
+</div>
+
+
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="lender-index" class="page">
+  
+      <!-- Scrollable page content-->
+    <div class="page-content" style="background-color:#ffffff;">
+    <div class="content-block-title" style="background-color: #d9d9d9;margin: 0;padding: 9px;">LENDER INDEX</div>
+		<div id="lender-index-content"></div>
+
+ <!-- Template7 Template -->
+				<script id="lender-index-template" type="text/template">
+						
+						<div class="list-block accordion-list lenders">
+  <ul>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Specialism</div>
+        </div></a>
+      <div class="accordion-item-content">
+        <div class="content-block" style="padding:0; margin-top: 10px;">
+       <table cellpadding="0" cellspacing="0">
+	<tr><td class="col-50 top-headers">Lender</td><td class="col-50 top-headers">Specialism</td><tr>
+	{{#each posts}}
+	<tr><td class="col-50 lender-rows"><a href="lender-details.html?id={{id}}" class="item-link item-content">{{name}}</a></td><td class="col-50 lender-rows">{{expertise}}</td><tr>
+{{/each}}
+	</table>
+             
+                   	
+
+        </div>
+      </div>
+    </li>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">FCA Regulated </div>
+        </div></a>
+      <div class="accordion-item-content">
+        <div class="content-block" style="padding:0; margin-top: 10px;">
+         <table cellpadding="0" cellspacing="0">
+	<tr><td class="col-50 top-headers">Lender</td><td class="col-50 top-headers">FCA Regulated</td><tr>
+	{{#each posts}}
+	<tr><td class="col-50 lender-rows"><a href="lender-details.html?id={{id}}" class="item-link item-content">{{name}}</a></td><td class="col-50 lender-rows">{{fsaRegulated}}</td><tr>
+{{/each}}
+	</table>
+        </div>
+      </div>
+    </li>
+       <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Max LTV</div>
+        </div></a>
+      <div class="accordion-item-content">
+        <div class="content-block" style="padding:0; margin-top: 10px;">
+               <table cellpadding="0" cellspacing="0">
+	<tr><td class="col-50 top-headers">Lender</td><td class="col-50 top-headers">Max LTV</td><tr>
+	{{#each posts}}
+	<tr><td class="col-50 lender-rows"><a href="lender-details.html?id={{id}}" class="item-link item-content">{{name}}</a></td><td class="col-50 lender-rows">{{maxLtv}}</td><tr>
+{{/each}}
+	</table>
+        </div>
+      </div>
+    </li>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Typical Loan Terms </div>
+        </div></a>
+      <div class="accordion-item-content">
+        <div class="content-block" style="padding:0; margin-top: 10px;">
+       <table cellpadding="0" cellspacing="0">
+	<tr><td class="col-50 top-headers">Lender</td><td class="col-50 top-headers">Typical Loan Terms </td><tr>
+	{{#each posts}}
+	<tr><td class="col-50 lender-rows"><a href="lender-details.html?id={{id}}" class="item-link item-content">{{name}}</a></td><td class="col-50 lender-rows">{{term}}</td><tr>
+{{/each}}
+	</table>
+        </div>
+      </div>
+    </li>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Geographical Lending Area</div>
+        </div></a>
+      <div class="accordion-item-content">
+        <div class="content-block" style="padding:0; margin-top: 10px;">
+         <table cellpadding="0" cellspacing="0">
+	<tr><td class="col-50 top-headers">Lender</td><td class="col-50 top-headers">Geographical Lending Area</td><tr>
+	{{#each posts}}
+	<tr><td class="col-50 lender-rows"><a href="lender-details.html?id={{id}}" class="item-link item-content">{{name}}</a></td><td class="col-50 lender-rows">{{geoArea}}</td><tr>
+{{/each}}
+	</table>
+        </div>
+      </div>
+    </li>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Min/max amounts</div>
+        </div></a>
+      <div class="accordion-item-content">
+        <div class="content-block" style="padding:0; margin-top: 10px;">
+         <table cellpadding="0" cellspacing="0">
+	<tr><td class="col-33 top-headers">Lender</td><td class="col-33 top-headers">Min Loan</td><td class="col-33 top-headers">Max Loan</td><tr>
+	{{#each posts}}
+	<tr><td class="col-33 lender-rows"><a href="lender-details.html?id={{id}}" class="item-link item-content">{{name}}</a></td><td class="col-33 lender-rows">{{minLoan}}</td><td class="col-33 lender-rows">{{maxLoan}}</td><tr>
+{{/each}}
+	</table>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+					   
+			  </script>
+		  
+       </div>
+  </div>
+</div>
+		

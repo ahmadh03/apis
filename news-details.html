@@ -1,0 +1,66 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left theme-white"><a href="#" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+     <div class="left sliding"><img  class="logo" src="img/logo.jpg"></div>
+
+   
+    <div class="right theme-white searchicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-search" onclick="searchResults();"> <i class="fa fa-search" style="font-size: 19px;"></i></a>
+            </div>
+            <div class="right theme-white navicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size: 19px;"></i></a>
+            </div>
+  </div>
+</div>
+
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="news-details" class="page">
+  
+      <!-- Scrollable page content-->
+    <div class="page-content">
+    <!-- Div for Result -->
+		<div id="content-details"></div>
+
+ <!-- Template7 Template -->
+				<script id="news-details-template" type="text/template">
+						{{#each posts}}
+						<div class="desc">
+						<h1>{{title}}</h1>
+						<h6>{{publish_date}} Posted By {{name}}</h6>
+            <div class="item-media"><img src="/cms/upload/image/{{articleimage}}"  style="width: 100%;"></div>
+						<div>stripslashes({{description}});</div>
+						</div>
+            <li id="Socilalsharing" style="list-style: outside none none;"></li>
+						<div id="commentpanel"  class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+    <div class="toolbar-inner" style="background:#173a62">
+      <a  href="article-comment.html?id={{id}}" class="link icon-only" style="color:white;"> <i style="float:left;color:white"  class="fa fa-comment" ></i> Comment </a>
+     
+    </div>
+  </div>
+
+					   {{/each}}
+			  </script>
+        <script id="news-details-template1" type="text/template">
+            {{#each posts}}
+            <div class="desc1">
+            <h1>{{keywords}}</h1>
+            </div>
+            <div id="commentpanel1"  class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+    <div class="toolbar-inner" style="background:#173a62">
+      <a  href="article-comment.html?id={{id}}" class="link icon-only" style="color:white;"> <i style="float:left;color:white"  class="fa fa-comment" ></i> Comment </a>
+     
+    </div>
+  </div>
+
+             {{/each}}
+        </script>
+
+
+        </div>
+  </div>
+  
+</div>
+</div>

@@ -1,0 +1,110 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left theme-white"><a href="#" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+     <div class="left sliding"><img class="logo" src="img/logo.jpg"></div>
+
+   
+    <div class="right theme-white searchicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-search" onclick="searchResults();"> <i class="fa fa-search" style="font-size: 19px;"></i></a>
+            </div>
+            <div class="right theme-white navicon" >
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size: 19px;"></i></a>
+            </div>
+  </div>
+</div>
+
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+             <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">Why Register?</div>
+              <div class="content-block">
+                <div class="content-block-inner" style="padding:0 15px;font-size:4vw">
+<!-- We need to specify template id in data-template attribute -->
+                  <p style="line-height: 1em;margin: 0.7em 0;">Personalise the type of news and features that will appear on your homepage</p>
+                  <p style="line-height: 1em;margin: 0.7em 0;">Keep up-to-the-minute with notifications sent straight to your phone</p>
+                  <p style="line-height: 1em;margin: 0.7em 0;">Share your views by commenting on articles with ease</p>
+              
+ 				 </div>
+              </div>
+      <div class="list-block"  style="font-size:14px">
+        <ul style="background:#FFF; border: 1px solid #173a62;">
+          <li>
+            <div class="item-content" style="min-height: 30px;">
+              
+              <div class="item-inner" style="min-height: 30px;"> 
+                <div class="item-title label">Name</div>
+                <div class="item-input">
+                  <input style="font-size:13px" type="text" id="si-name" placeholder="Your name"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content" style="min-height: 30px;">
+                           <div class="item-inner" style="min-height: 30px;"> 
+                <div class="item-title label">E-mail</div>
+                <div class="item-input">
+                  <input style="font-size:13px" type="email" id="si-email"  placeholder="E-mail"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content" style="min-height: 30px;">
+                           <div class="item-inner" style="min-height: 30px;"> 
+                <div class="item-title label">Password</div>
+                <div class="item-input">
+                  <input style="font-size:13px" type="password" id="si-password"  placeholder="Password"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content" style="min-height: 37px;">
+              
+              <div class="item-inner" style="min-height: 37px;"> 
+                <div class="item-title label" style="width:80%">Notification Alerts</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input id="si-notification"  type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content" style="min-height: 37px;">
+              
+              <div class="item-inner" style="min-height: 37px;"> 
+                <div class="item-title label" style="width:80%">Sign up to our Newsletter</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input id="si-newsletter"  type="checkbox"/>
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+
+         </ul>
+      </div>
+
+       
+              <div class="content-block">
+                <div class="col-50">	
+                  	<div class="col-100" style="text-align:center">
+	                  	<p>Start reading the latest news</p>
+	                  	<a href="#" onclick="signin1();"  class="button active color-blue">Submit</a>
+	                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

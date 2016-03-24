@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>My App</title>
+		<!-- Path to Framework7 Library CSS-->
+		<link rel="stylesheet" href="css/framework7.min.css">
+		<!-- <link rel="stylesheet" href="css/framework7.material.min.css"> -->
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="css/my-app.css">
+		<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	</head>
+	<body >
+
+	<!-- Status bar overlay for fullscreen mode-->
+	<div class="statusbar-overlay"></div>
+	<!-- Panels overlay-->
+	<div class="panel-overlay"></div>
+	<!-- Left panel with reveal effect-->
+	<!-- Right panel with cover effect-->
+	<div class="panel panel-right panel-cover">
+		<div class="list-block">
+		<ul>
+			<li id="home_news">
+				<a class="close-panel item-link" href="news.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-home"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Your Latest News</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<li>
+				<a class="close-panel item-link" href="home_news.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-newspaper-o"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">News</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<li>
+				<a class="close-panel item-link" href="features.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-pencil"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Features</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<li>
+				<a class="close-panel item-link" href="blogs.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-bullhorn"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Blogs</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<li>
+				<a class="close-panel item-link" href="poll.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-dot-circle-o"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Poll</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<li>
+				<a class="close-panel item-link" href="lender-index.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-list-ol"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">The Index</div>
+					</div>
+				</div>
+				</a>
+			</li>
+				<!-- <li>
+				<a class="close-panel item-link" href="bridge-doctor.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-heartbeat"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Bridge Doctor</div>
+					</div>
+				</div>
+				</a>
+			</li> -->
+					<!-- <li>
+				<a class="close-panel item-link" href="commercial-clinic.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-stethoscope"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Commercial Clinic</div>
+					</div>
+				</div>
+				</a>
+			</li> -->
+		<li>
+			<a class="close-panel item-link" href="contactus.html">
+			<div class="item-content">
+				<div class="item-media white">
+					<i class="fa fa-phone-square"></i>
+				</div>
+				<div class="item-inner">
+					<div class="item-title white">Contact Us</div>
+				</div>
+			</div>
+			</a>
+		</li>
+		<li id="myprofilemenu">
+				<a class="close-panel item-link" href="myprofile.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-user"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">My Profile</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<li id="login">
+				<a class="close-panel item-link" href="login.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-user-plus"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Login</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<li id="logout">
+				<a class="close-panel item-link" href="#" onclick="Logout();">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-sign-out"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">Logout</div>
+					</div>
+				</div>
+				</a>
+			</li>
+			<!-- <li id="signupmenu">
+				<a class="close-panel item-link" href="home.html">
+				<div class="item-content">
+					<div class="item-media white">
+						<i class="fa fa-user"></i>
+					</div>
+					<div class="item-inner">
+						<div class="item-title white">My Profile</div>
+					</div>
+				</div>
+				</a>
+			</li> -->
+
+
+		</ul>
+	</div>
+</div>
+	<!-- Views-->
+	<div class="views">
+	<!-- Your main view, should have "view-main" class-->
+		<div class="view view-main">
+		<!-- Top Navbar-->
+			<div class="navbar" style="display:none;" >
+				<div class="navbar-inner">
+					<!-- We have home navbar without left link-->
+					<div class="left sliding"><img class="logo" src="img/logo.jpg"></div>
+						<div class="right theme-white searchicon" >
+						<!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only" onclick="searchResults();"> <i class="fa fa-search" style="font-size: 19px;"></i></a>
+						</div>
+						<div class="right theme-white navicon" >
+						<!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size: 19px;"></i></a>
+						</div>
+				</div>
+			</div>
+			<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+			<div class="pages navbar-through toolbar-through">
+				<!-- Page, data-page contains page name-->
+				<div data-page="index" class="page">
+					<!-- Scrollable page content-->
+					<div class="page-content">
+						<div class="content-block-title"><img class="splashLogo" src="img/big-logo.jpg"></div>
+					</div>
+				</div>
+			</div>
+			<!-- Bottom Toolbar-->
+		</div>
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/SocialSharing.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+	</script>
+
+	<!-- Path to Framework7 Library JS-->
+	<script type="text/javascript" src="js/framework7.min.js"></script>
+	<!-- Path to your app js-->
+	<script type="text/javascript" src="js/my-app.js"></script>
+	<script type="text/javascript">
+
+	Checklogin();
+
+	function Results(){
+	var	pollID = $$("#pollID").val();
+			$$.ajax({
+				type: "GET",
+				url: "http://bridgingandcommercial.co.uk/resulthome-app.php",
+				data: 'pollID='+pollID,
+				contentType: "text/html",
+				success: function(data){
+				//alert(data);
+				$$("#Result_msg").html(data);
+				}
+			});
+	}
+	function Logout()
+	{
+		var storedData1 = myApp.formStoreData('logged_userId',{
+			'userId':''
+		});
+		mainView.router.loadPage('login.html');
+	}
+	</script>
+	</body>
+</html>
